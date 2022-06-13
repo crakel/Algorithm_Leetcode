@@ -4,9 +4,6 @@ class Solution:
         
         table = str.maketrans("!?',;.", "      ")
         paragraph = paragraph.translate(table)
-        print(paragraph)
-# ex.translate(table)
-#         paragraph = paragraph.replace(/"!"|"?"|"'"|","|";"|"."/g, "")
         
         for s in paragraph.split():
             s = s.lower()
