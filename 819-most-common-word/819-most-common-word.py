@@ -16,7 +16,11 @@ class Solution:
             if b in dic:
                 dic.pop(b)
         
-        max_cnt = max(dic.values())
-        for key, value in dic.items():
-            if value == max_cnt:
-                return key 
+        # 한번에 축약
+        return max(dic, key=dic.get)
+    
+        # 풀어 쓴 식
+        # max_cnt = max(dic.values())
+        # for key, value in dic.items():
+        #     if value == max_cnt:
+        #         return key
