@@ -9,4 +9,4 @@ class Solution:
             else:
                 res[word] = [s]
         
-        return list(res.values())
+        return res.values()
