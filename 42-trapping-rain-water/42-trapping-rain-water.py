@@ -1,6 +1,6 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        if not height:
+        if len(height) < 3:
             return 0
         
         water = 0
