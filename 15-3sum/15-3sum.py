@@ -3,7 +3,6 @@ class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         answer = set()
         nums.sort()
-        print(nums)
         # 투 포인터 풀이
         for i in range(len(nums) - 2):
             # 중복 skip
